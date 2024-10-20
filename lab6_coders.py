@@ -10,6 +10,7 @@ def encode(password):
 
     return encodePassword
 
+#Vincent Hong
 def decode(encoded):
     decoded = ""
 
