@@ -1,4 +1,4 @@
-#Aatish Duddela
+#Aatish Duddela and Vincent Hong
 def encode(password):
     encodePassword = ""
     for digit in password:
@@ -10,7 +10,6 @@ def encode(password):
 
     return encodePassword
 
-#Vincent Hong
 def decode(encoded):
     decoded = ""
 
