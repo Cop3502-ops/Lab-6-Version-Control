@@ -10,6 +10,15 @@ def encode(password):
 
     return encodePassword
 
+def decode(encoded):
+    decoded = ""
+
+    #takes each number in encoded and minus it by 3 and then adds that number as a string to decoded
+    for num in encoded:
+        decoded += str((int(num) - 3) % 10)
+
+    return decoded
+
 def main():
     continueCode = True
     while continueCode:
@@ -28,8 +37,9 @@ def main():
             print("Your password has been encoded and stored!")
             print("") #Added a new line when reprinting the menu
         elif menuChoice == "2":
-            pass
-
+            encoded_pass = input("Please enter your password to decode: ")
+            decoded_pass = decode(encoded_pass)
+            print(f"Decoded password: {decoded_pass}")
         else:
             break
 if __name__ == "__main__":
