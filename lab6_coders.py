@@ -29,11 +29,8 @@ def main():
         if menuChoice == "1":
             passEncoder = input("Please enter your password to encode:")
             encodeVar = encode(passEncoder)
-<<<<<<< HEAD
-=======
             #Removed the print statement which displays the encoded password
             #print(encode(passEncoder))
->>>>>>> 28330bece7ab8656ebe9d0e9c18a18f4d94a2051
             print("Your password has been encoded and stored!")
             print("")
         elif menuChoice == "2":
